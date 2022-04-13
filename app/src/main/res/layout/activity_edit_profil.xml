@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".EditProfil">
+
+    <RelativeLayout
+        android:id="@+id/rvSetting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/Foreground"
+            android:id="@+id/ll">
+
+            <RelativeLayout
+                android:id="@+id/imgProfile"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_width="130dp"
+                android:background="@drawable/img_bulat"
+                android:layout_height="130dp"
+                android:layout_marginBottom="15dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/roma"
+                    android:id="@+id/imgProf"/>
+
+                <RelativeLayout
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bg_circle_grey"
+                    android:padding="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:elevation="3dp">
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:tint="#555"
+                        android:background="@drawable/bg_circle_grey"
+                        android:src="@drawable/ic_camera"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/imgTake"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/ll"
+            android:background="@color/Foreground"
+            android:layout_marginTop="25dp">
+
+            <EditText
+                android:id="@+id/edNama"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="18dp"
+                android:text="Hasyim"
+                android:inputType="textCapSentences"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorPrimaryDark"
+                android:singleLine="true"
+                android:background="@drawable/bg_login"/>
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="18dp"
+                android:text="acimkompor@yahoo.com"
+                android:inputType="text"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorPrimaryDark"
+                android:singleLine="true"
+                android:background="@drawable/bg_login"/>
+
+            <EditText
+                android:id="@+id/edDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="18dp"
+                android:text="Terdaftar: 19-02-2020"
+                android:inputType="text"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorPrimaryDark"
+                android:singleLine="true"
+                android:background="@drawable/bg_login"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_login"
+                android:text="Simpan"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/Foreground"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:id="@+id/btnSave"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

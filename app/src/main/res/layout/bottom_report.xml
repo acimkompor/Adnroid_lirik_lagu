@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:id="@+id/txtvx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report Lirik"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal" />
+
+
+    <EditText
+        android:id="@+id/edtLirik"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/txtvx"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:textSize="15dp"
+        android:enabled="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:singleLine="true"
+        android:background="@drawable/bg_lirik"/>
+
+    <EditText
+        android:id="@+id/edtKeterangan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/edtLirik"
+        android:padding="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:hint="tulis keteranganmu"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/bg_lirik"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:isScrollContainer="false"/>
+
+    <Button
+        android:layout_below="@id/edtKeterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_login"
+        android:text="Kirim Report"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:id="@+id/btnKirimReport"
+        android:textColor="@color/Foreground"
+        android:layout_centerInParent="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+
+</RelativeLayout>

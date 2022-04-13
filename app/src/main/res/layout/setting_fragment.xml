@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rvSetting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/Foreground"
+            android:id="@+id/ll">
+
+            <RelativeLayout
+                android:id="@+id/imgProfile"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_width="120dp"
+                android:background="@drawable/img_bulat"
+                android:layout_height="120dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/roma"
+                    android:id="@+id/imgProf"/>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/txtNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:text="Hasyim"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Terdaftar Sejak "/>
+                <TextView
+                    android:id="@+id/txtTgl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="19-02-2020"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/ll"
+            android:id="@+id/rlTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/Foreground">
+
+            <TextView
+                android:id="@+id/txtTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terakhir dilihat"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:id="@+id/txtdes"
+                android:layout_below="@id/txtTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lirik lagu yang terakhir anda lihat"
+                android:textSize="13sp"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtdes"
+                android:orientation="horizontal"
+                android:scrollbars="none"
+                android:layout_margin="10dp"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlComposer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/Foreground"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/rlTop"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="10dp"
+                android:text="Tulis lirik baru"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_playlist_add"
+                android:tint="@color/colorPrimaryDark"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rlLis"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/Foreground"
+            android:layout_below="@id/rlComposer"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="10dp"
+                android:text="List Laguku"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_keyboard_arrow"
+                android:tint="@color/colorPrimaryDark"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"/>
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlSetSize"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/Foreground"
+            android:layout_below="@id/rlLis"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="10dp"
+                android:text="Seting Ukuran Tulisan Lirik"/>
+
+            <TextView
+                android:id="@+id/txtFontSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="10dp"
+                android:text="80%"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_keyboard_arrow"
+                android:tint="@color/colorPrimaryDark"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"/>
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlCopyright"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/Foreground"
+            android:layout_below="@id/rlSetSize"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="10dp"
+                android:text="Copyright information"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_keyboard_arrow"
+                android:tint="@color/colorPrimaryDark"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"/>
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:id="@+id/rlKebijakan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/Foreground"
+        android:layout_below="@id/rlCopyright"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="10dp"
+            android:text="Kebijakan Privasi"/>
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimaryDark"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlSignout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/Foreground"
+            android:orientation="vertical"
+            android:layout_below="@id/rlKebijakan"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keluar"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15dp"
+                android:id="@+id/btnLogout"/>
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtVersi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:elevation="3dp"
+            android:textColor="#CACACA"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/rlSignout"
+            android:text="Versi app 1.0.0"
+            android:layout_marginBottom="25dp"/>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

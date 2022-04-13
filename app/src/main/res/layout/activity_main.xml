@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Depan"
+            android:textColor="#fff"
+            android:textSize="18dp"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/toolbar_title"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:drawableStart="@drawable/ic_search"-->
+<!--            android:paddingLeft="12dp"-->
+<!--            android:drawableTint="@color/colorPrimaryDark"-->
+<!--            android:hint="Cari lagu-lagu"-->
+<!--            android:textSize="17dp"-->
+<!--            android:textStyle="italic"-->
+<!--            android:textColorHint="@color/colorPrimaryDark"-->
+<!--            android:background="@drawable/bg_edit"-->
+<!--            android:drawableLeft="@drawable/ic_search" />-->
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rlTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/txtTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Top View"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+                <TextView
+                    android:id="@+id/txtdes"
+                    android:layout_below="@id/txtTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lirik lagu yang paling banyak dilihat"
+                    android:textSize="13sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtdes"
+                    android:orientation="horizontal"
+                    android:scrollbars="none"
+                    android:layout_margin="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:id="@+id/txtLike"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Top Liked"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+                <TextView
+                    android:id="@+id/txtdes1"
+                    android:layout_below="@id/txtLike"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lirik lagu yang paling banyak disukai"
+                    android:textSize="13sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvLike"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtdes1"
+                    android:orientation="horizontal"
+                    android:scrollbars="none"
+                    android:layout_margin="10dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="9"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="2">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="#ccc"
+                android:id="@+id/imgLogo"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_weight="6">
+
+            <TextView
+                android:id="@+id/txtJenis"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Dangdut"
+                android:textColor="#BDBCBC"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/txtJudul"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Citra Cinta"
+                android:textSize="16dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#234724"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/txtArtis"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Rhoma Irama"
+                android:textSize="16dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#234724"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:text="10"
+                    android:textSize="11dp"
+                    android:id="@+id/txtCreate"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_keyboard_arrow"
+                android:tint="#234724"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/ll"/>
+
+
+</RelativeLayout>

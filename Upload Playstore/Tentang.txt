@@ -1,0 +1,15 @@
+Lirik Laguku adalah aplikasi yang menyediakan lirik lagu indonesia, lagu dangdut, lagu koplo, lagu pop, lagu daerah, dll.
+
+Aplikasi Lirik Laguku tersedia lebih dari 2.500 lirik lagu yang dapat di cari secara online (membutuhkan koneksi internet).
+
+Fitur - fitur:
+- Dapat kontribusi menulis lirik lagu online (wajib register), dan lagu dapat di temukan untuk semua orang.
+- Report Lirik lagu yang tidak sesuai.
+- kolom pencarian yang mudah.
+- Terdapat tombol favorite, memudahkan pencarian lirik lagu yang disukai.
+- History pencarian lirik.
+- dan masih banyak lainnya.
+
+
+Lirik Laguku dapat di jalankan pada perangkat Android versi 4.1 ( Jelly Bean) atau yang terbaru. 
+

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".TulisLirikBaru">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_marginTop="35dp"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logokuu"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_lirik"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/imgLogo"
+                android:layout_marginBottom="25dp"
+                android:paddingBottom="25dp">
+
+                <EditText
+                    android:id="@+id/edJudul"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="50dp"
+                    android:textSize="15dp"
+                    android:hint="judul lagu"
+                    android:inputType="textCapWords"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_lirik"/>
+
+                <EditText
+                    android:id="@+id/edVocal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:hint="Penyanyi"
+                    android:inputType="textCapWords"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_lirik"/>
+
+                <Spinner
+                    android:id="@+id/spinnerJenis"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:hint="Jenis musik"
+                    android:inputType="textCapSentences"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/bg_lirik"/>
+
+                <EditText
+                    android:id="@+id/edLirik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:hint="lirik lagu"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/bg_lirik"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_login"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Simpan"
+                    android:textAllCaps="false"
+                    android:textSize="18dp"
+                    android:id="@+id/btnSimpan"
+                    android:textColor="@color/Foreground"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

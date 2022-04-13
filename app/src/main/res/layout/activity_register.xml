@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_marginTop="35dp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logokuu"/>
+
+    <TextView
+        android:id="@+id/tzt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form Login"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/imgLogo"
+        android:textSize="20dp"/>
+
+
+    <RelativeLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tzt">
+
+        <EditText
+            app:boxBackgroundMode="none"
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_login"
+            android:hint="nama lengkap"
+            android:textColor="@color/colorPrimaryDark"
+            android:inputType="text|textNoSuggestions|textCapWords"
+            android:id="@+id/txtnama"
+            android:layout_centerHorizontal="true"
+            android:elevation="3dp"
+            android:textSize="18dp"/>
+
+        <EditText
+            app:boxBackgroundMode="none"
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_login"
+            android:hint="email valid"
+            android:textColor="@color/colorPrimaryDark"
+            android:inputType="textEmailAddress"
+            android:id="@+id/txtusername"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtnama"
+            android:elevation="3dp"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:elevation="3dp"
+            android:background="@drawable/bg_login"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="password min 6 karakter"
+            android:inputType="textPassword"
+            android:id="@+id/txtpassword"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/txtusername"
+            android:textSize="18dp"/>
+
+        <EditText
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:elevation="3dp"
+            android:background="@drawable/bg_login"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="confirm password"
+            android:inputType="textPassword"
+            android:id="@+id/txtpassword2"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/txtpassword"
+            android:textSize="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpassword2"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:layout_marginBottom="25dp"
+            android:id="@+id/ll">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree to the "
+                android:textSize="15dp"
+                android:textColor="#999"
+                android:id="@+id/cekBox"/>
+
+            <TextView
+                android:id="@+id/termOfUse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Kebijakan Privasi"/>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/ll"
+            android:background="@drawable/btn_login"
+            android:text="Register"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/Foreground"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:id="@+id/btnRegister"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:id="@+id/txtOr"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnRegister"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/txtBackLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sudah punya akun LOGIN DISINI"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtOr"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="15dp"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

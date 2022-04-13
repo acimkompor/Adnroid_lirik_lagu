@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Lirik Lagu</string>
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="search">Search</string>
+    <string name="account">Account</string>
+
+    <string name="i_agree">I agree to the terms of use</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="website">Website</string>
+    <string name="age">Age</string>
+    <string name="phone">Phone</string>
+    <string name="save">Save</string>
+    <string name="username_already_exists">Username already exists</string>
+
+    <!--  TODO: adMod -->
+
+    <string name="id_unit">ca-app-pub-7247853095477431/4770692054</string>
+    <string name="id_app">ca-app-pub-7247853095477431~6058888843</string>
+
+    <!--    gogle test-->
+<!--    <string name="id_unit">ca-app-pub-3940256099942544/6300978111</string>-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="facebook_app_id">996373724127952</string>
+    <string name="fb_login_protocol_scheme">fb996373724127952</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="longtext">Dihiasi alam manusiawi\r\nDengan cinta sebagai rahmat-Nya\r\n\r\nAgar dapat hidup berkasih-sayang\r\nLaki-laki dan perempuan\r\nAgar dapat mengembangkan keturunan\r\nDemi penerus perjuangan\r\n\r\nBegitulah Tuhan meletakkan\r\nNilai cinta dalam kesucian\r\n\r\nJadi janganlah kau menyalahgunakan\r\nSebagai pemuas nafsu syetan\r\nDan juga janganlah cinta kaujadikan\r\nAlat pembuat kerusakan\r\n\r\nBila datang rasa cinta\r\nHati-hati dan waspada\r\nJaga, pelihara, serta kuasailah\r\n\r\nSehingga sampai waktunya\r\nHalal bagimu berdua\r\nBila biduk cinta tiba di titik nikah\r\n\r\nBanyak sudah tunas-tunas muda\r\nBerguguran sebelum berkembang\r\n\r\nKorban dari nafsu birahi durjana\r\nYang mengatasnamakan cinta\r\nJanganlah kau menodai citra cinta\r\nYang memang suci dan mulia\r\n\r\nSyukurilah anugerah cinta\r\nPelihara nilai citra cinta</string>
+    <string name="textSize">Geser ukuran teks sampai Anda dapat membacanya dengan nyaman.\nTeks akan terlihat setidaknya sebesar ini setelah Anda menekan tombol OK.</string>
+</resources>
